@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A20E4FAE1CADEA3000C49639 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E4FAD1CADEA3000C49639 /* AppDelegate.swift */; };
+		A20E4FB01CADEA3000C49639 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E4FAF1CADEA3000C49639 /* ViewController.swift */; };
+		A20E4FB21CADEA3000C49639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20E4FB11CADEA3000C49639 /* Assets.xcassets */; };
+		A20E4FB51CADEA3000C49639 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20E4FB31CADEA3000C49639 /* Main.storyboard */; };
+		A20E4FC01CADEA3000C49639 /* HW10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E4FBF1CADEA3000C49639 /* HW10Tests.swift */; };
+		A20E4FCB1CADEA3000C49639 /* HW10UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E4FCA1CADEA3000C49639 /* HW10UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A20E4FBC1CADEA3000C49639 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A20E4FA21CADEA3000C49639 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A20E4FA91CADEA3000C49639;
+			remoteInfo = HW10;
+		};
+		A20E4FC71CADEA3000C49639 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A20E4FA21CADEA3000C49639 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A20E4FA91CADEA3000C49639;
+			remoteInfo = HW10;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A20E4FAA1CADEA3000C49639 /* HW10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW10.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20E4FAD1CADEA3000C49639 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A20E4FAF1CADEA3000C49639 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A20E4FB11CADEA3000C49639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20E4FB41CADEA3000C49639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A20E4FB61CADEA3000C49639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20E4FBB1CADEA3000C49639 /* HW10Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW10Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20E4FBF1CADEA3000C49639 /* HW10Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW10Tests.swift; sourceTree = "<group>"; };
+		A20E4FC11CADEA3000C49639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20E4FC61CADEA3000C49639 /* HW10UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW10UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20E4FCA1CADEA3000C49639 /* HW10UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW10UITests.swift; sourceTree = "<group>"; };
+		A20E4FCC1CADEA3000C49639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A20E4FA71CADEA3000C49639 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20E4FB81CADEA3000C49639 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20E4FC31CADEA3000C49639 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A20E4FA11CADEA3000C49639 = {
+			isa = PBXGroup;
+			children = (
+				A20E4FAC1CADEA3000C49639 /* HW10 */,
+				A20E4FBE1CADEA3000C49639 /* HW10Tests */,
+				A20E4FC91CADEA3000C49639 /* HW10UITests */,
+				A20E4FAB1CADEA3000C49639 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A20E4FAB1CADEA3000C49639 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20E4FAA1CADEA3000C49639 /* HW10.app */,
+				A20E4FBB1CADEA3000C49639 /* HW10Tests.xctest */,
+				A20E4FC61CADEA3000C49639 /* HW10UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A20E4FAC1CADEA3000C49639 /* HW10 */ = {
+			isa = PBXGroup;
+			children = (
+				A20E4FAD1CADEA3000C49639 /* AppDelegate.swift */,
+				A20E4FAF1CADEA3000C49639 /* ViewController.swift */,
+				A20E4FB11CADEA3000C49639 /* Assets.xcassets */,
+				A20E4FB31CADEA3000C49639 /* Main.storyboard */,
+				A20E4FB61CADEA3000C49639 /* Info.plist */,
+			);
+			path = HW10;
+			sourceTree = "<group>";
+		};
+		A20E4FBE1CADEA3000C49639 /* HW10Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A20E4FBF1CADEA3000C49639 /* HW10Tests.swift */,
+				A20E4FC11CADEA3000C49639 /* Info.plist */,
+			);
+			path = HW10Tests;
+			sourceTree = "<group>";
+		};
+		A20E4FC91CADEA3000C49639 /* HW10UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A20E4FCA1CADEA3000C49639 /* HW10UITests.swift */,
+				A20E4FCC1CADEA3000C49639 /* Info.plist */,
+			);
+			path = HW10UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A20E4FA91CADEA3000C49639 /* HW10 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A20E4FCF1CADEA3000C49639 /* Build configuration list for PBXNativeTarget "HW10" */;
+			buildPhases = (
+				A20E4FA61CADEA3000C49639 /* Sources */,
+				A20E4FA71CADEA3000C49639 /* Frameworks */,
+				A20E4FA81CADEA3000C49639 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HW10;
+			productName = HW10;
+			productReference = A20E4FAA1CADEA3000C49639 /* HW10.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A20E4FBA1CADEA3000C49639 /* HW10Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A20E4FD21CADEA3000C49639 /* Build configuration list for PBXNativeTarget "HW10Tests" */;
+			buildPhases = (
+				A20E4FB71CADEA3000C49639 /* Sources */,
+				A20E4FB81CADEA3000C49639 /* Frameworks */,
+				A20E4FB91CADEA3000C49639 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A20E4FBD1CADEA3000C49639 /* PBXTargetDependency */,
+			);
+			name = HW10Tests;
+			productName = HW10Tests;
+			productReference = A20E4FBB1CADEA3000C49639 /* HW10Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A20E4FC51CADEA3000C49639 /* HW10UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A20E4FD51CADEA3000C49639 /* Build configuration list for PBXNativeTarget "HW10UITests" */;
+			buildPhases = (
+				A20E4FC21CADEA3000C49639 /* Sources */,
+				A20E4FC31CADEA3000C49639 /* Frameworks */,
+				A20E4FC41CADEA3000C49639 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A20E4FC81CADEA3000C49639 /* PBXTargetDependency */,
+			);
+			name = HW10UITests;
+			productName = HW10UITests;
+			productReference = A20E4FC61CADEA3000C49639 /* HW10UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A20E4FA21CADEA3000C49639 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Ryan Milvenan";
+				TargetAttributes = {
+					A20E4FA91CADEA3000C49639 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					A20E4FBA1CADEA3000C49639 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A20E4FA91CADEA3000C49639;
+					};
+					A20E4FC51CADEA3000C49639 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A20E4FA91CADEA3000C49639;
+					};
+				};
+			};
+			buildConfigurationList = A20E4FA51CADEA3000C49639 /* Build configuration list for PBXProject "HW10" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A20E4FA11CADEA3000C49639;
+			productRefGroup = A20E4FAB1CADEA3000C49639 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A20E4FA91CADEA3000C49639 /* HW10 */,
+				A20E4FBA1CADEA3000C49639 /* HW10Tests */,
+				A20E4FC51CADEA3000C49639 /* HW10UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A20E4FA81CADEA3000C49639 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20E4FB21CADEA3000C49639 /* Assets.xcassets in Resources */,
+				A20E4FB51CADEA3000C49639 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20E4FB91CADEA3000C49639 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20E4FC41CADEA3000C49639 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A20E4FA61CADEA3000C49639 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20E4FB01CADEA3000C49639 /* ViewController.swift in Sources */,
+				A20E4FAE1CADEA3000C49639 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20E4FB71CADEA3000C49639 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20E4FC01CADEA3000C49639 /* HW10Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A20E4FC21CADEA3000C49639 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20E4FCB1CADEA3000C49639 /* HW10UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A20E4FBD1CADEA3000C49639 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A20E4FA91CADEA3000C49639 /* HW10 */;
+			targetProxy = A20E4FBC1CADEA3000C49639 /* PBXContainerItemProxy */;
+		};
+		A20E4FC81CADEA3000C49639 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A20E4FA91CADEA3000C49639 /* HW10 */;
+			targetProxy = A20E4FC71CADEA3000C49639 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A20E4FB31CADEA3000C49639 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A20E4FB41CADEA3000C49639 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A20E4FCD1CADEA3000C49639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A20E4FCE1CADEA3000C49639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A20E4FD01CADEA3000C49639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HW10/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carnivalinparadise.HW10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A20E4FD11CADEA3000C49639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HW10/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carnivalinparadise.HW10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A20E4FD31CADEA3000C49639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HW10Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carnivalinparadise.HW10Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HW10.app/Contents/MacOS/HW10";
+			};
+			name = Debug;
+		};
+		A20E4FD41CADEA3000C49639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HW10Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carnivalinparadise.HW10Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HW10.app/Contents/MacOS/HW10";
+			};
+			name = Release;
+		};
+		A20E4FD61CADEA3000C49639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HW10UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carnivalinparadise.HW10UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HW10;
+			};
+			name = Debug;
+		};
+		A20E4FD71CADEA3000C49639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HW10UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carnivalinparadise.HW10UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HW10;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A20E4FA51CADEA3000C49639 /* Build configuration list for PBXProject "HW10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20E4FCD1CADEA3000C49639 /* Debug */,
+				A20E4FCE1CADEA3000C49639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A20E4FCF1CADEA3000C49639 /* Build configuration list for PBXNativeTarget "HW10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20E4FD01CADEA3000C49639 /* Debug */,
+				A20E4FD11CADEA3000C49639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A20E4FD21CADEA3000C49639 /* Build configuration list for PBXNativeTarget "HW10Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20E4FD31CADEA3000C49639 /* Debug */,
+				A20E4FD41CADEA3000C49639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A20E4FD51CADEA3000C49639 /* Build configuration list for PBXNativeTarget "HW10UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A20E4FD61CADEA3000C49639 /* Debug */,
+				A20E4FD71CADEA3000C49639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A20E4FA21CADEA3000C49639 /* Project object */;
+}
