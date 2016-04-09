@@ -13,6 +13,9 @@
 		A20E4FB51CADEA3000C49639 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20E4FB31CADEA3000C49639 /* Main.storyboard */; };
 		A20E4FC01CADEA3000C49639 /* HW10Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E4FBF1CADEA3000C49639 /* HW10Tests.swift */; };
 		A20E4FCB1CADEA3000C49639 /* HW10UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E4FCA1CADEA3000C49639 /* HW10UITests.swift */; };
+		A20E4FD91CADEA4A00C49639 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E4FD81CADEA4A00C49639 /* MetalView.swift */; };
+		A20E4FDB1CADF41200C49639 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E4FDA1CADF41200C49639 /* Triangle.swift */; };
+		A20E4FDD1CADF67E00C49639 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A20E4FDC1CADF67E00C49639 /* Shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		A20E4FC61CADEA3000C49639 /* HW10UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW10UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20E4FCA1CADEA3000C49639 /* HW10UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW10UITests.swift; sourceTree = "<group>"; };
 		A20E4FCC1CADEA3000C49639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20E4FD81CADEA4A00C49639 /* MetalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		A20E4FDA1CADF41200C49639 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		A20E4FDC1CADF67E00C49639 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 				A20E4FAF1CADEA3000C49639 /* ViewController.swift */,
 				A20E4FB11CADEA3000C49639 /* Assets.xcassets */,
 				A20E4FB31CADEA3000C49639 /* Main.storyboard */,
+				A20E4FD81CADEA4A00C49639 /* MetalView.swift */,
+				A20E4FDC1CADF67E00C49639 /* Shaders.metal */,
+				A20E4FDA1CADF41200C49639 /* Triangle.swift */,
 				A20E4FB61CADEA3000C49639 /* Info.plist */,
 			);
 			path = HW10;
@@ -252,8 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A20E4FD91CADEA4A00C49639 /* MetalView.swift in Sources */,
 				A20E4FB01CADEA3000C49639 /* ViewController.swift in Sources */,
 				A20E4FAE1CADEA3000C49639 /* AppDelegate.swift in Sources */,
+				A20E4FDB1CADF41200C49639 /* Triangle.swift in Sources */,
+				A20E4FDD1CADF67E00C49639 /* Shaders.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +487,7 @@
 				A20E4FD11CADEA3000C49639 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A20E4FD21CADEA3000C49639 /* Build configuration list for PBXNativeTarget "HW10Tests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +496,7 @@
 				A20E4FD41CADEA3000C49639 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A20E4FD51CADEA3000C49639 /* Build configuration list for PBXNativeTarget "HW10UITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +505,7 @@
 				A20E4FD71CADEA3000C49639 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
