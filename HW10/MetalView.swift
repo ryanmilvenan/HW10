@@ -38,11 +38,6 @@ class MetalView: MTKView {
     private var particlesParticlePtr: UnsafeMutablePointer<Particle>!
     private var particlesParticleBufferPtr: UnsafeMutableBufferPointer<Particle>!
     
-    let particleSize = sizeof(Particle)
-    let particleColorSize = sizeof(ParticleColor)
-    let boolSize = sizeof(Bool)
-    let floatSize = sizeof(Float)
-    
     var particleColor = ParticleColor(R: 1, G: 0.5, B: 0.2, A: 1)
     var dragFactor: Float = 0.97
     var respawnOutOfBoundsParticles = true
@@ -169,12 +164,12 @@ class MetalView: MTKView {
         commandEncoder.setBuffer(particlesBuffer, offset: 0, atIndex: 0)
         commandEncoder.setBuffer(particlesBuffer, offset: 0, atIndex: 1)
         
-        commandEncoder.setBytes(&particleColor, length: particleColorSize, atIndex: 2)
+        commandEncoder.setBytes(&particleColor, length: sizeof(ParticleColor), atIndex: 2)
         
         commandEncoder.setBuffer(imageWidthFloatBuffer, offset: 0, atIndex: 3)
         commandEncoder.setBuffer(imageHeightFloatBuffer, offset: 0, atIndex: 4)
         
-        commandEncoder.setBytes(&dragFactor, length: floatSize, atIndex: 5)
+        commandEncoder.setBytes(&dragFactor, length: sizeof(Float), atIndex: 5)
         
         guard let drawable = currentDrawable else
         {

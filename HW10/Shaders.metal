@@ -44,8 +44,8 @@ kernel void particleShader(texture2d<float, access::write> outTexture [[texture(
     }
     else
     {
-        inParticle[0].z = spawnSpeedMultipler;
-        inParticle[0].w = spawnSpeedMultipler;
+        inParticle[0].z = spawnSpeedMultipler * fast::sin(inParticle[0].x + inParticle[0].y);
+        inParticle[0].w = spawnSpeedMultipler * fast::cos(inParticle[0].x + inParticle[0].y);
         
         inParticle[0].x = imageWidth/2;
         inParticle[0].y = imageHeight/2;
