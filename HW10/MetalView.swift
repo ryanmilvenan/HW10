@@ -35,30 +35,30 @@ class MetalView: MTKView {
     
     private var particlesMemory:UnsafeMutablePointer<Void> = nil
     private var particlesVoidPtr: COpaquePointer!
-    private var particlesParticlePtr: UnsafeMutablePointer<Particle>!
-    private var particlesParticleBufferPtr: UnsafeMutableBufferPointer<Particle>!
+    private var particlesParticlePtr: UnsafeMutablePointer<Vector4>!
+    private var particlesParticleBufferPtr: UnsafeMutableBufferPointer<Vector4>!
     
-    var particleColor = ParticleColor(R: 1, G: 0.5, B: 0.2, A: 1)
-    var dragFactor: Float = 0.97
-    var respawnOutOfBoundsParticles = true
-    var clearOnStep = true
-    
+    var particleColor = ParticleColor(R: 0.14, G: 0.62, B: 1, A: 1)
     
     var particlesBuffer: MTLBuffer!
 
     
     required init(coder: NSCoder) {
-        particleCount = ParticleCount.HalfMillion.rawValue
+        particleCount = ParticleCount.QuarterMillion.rawValue
         imageWidth = 1024
         imageHeight = 768
         bytesPerRow = Int(4 * imageWidth)
         region = MTLRegionMake2D(0, 0, Int(imageWidth), Int(imageHeight))
         blankBitmapRawData = [UInt8](count: Int(imageWidth * imageHeight * 4), repeatedValue: 0)
-        particlesMemoryByteSize = particleCount * sizeof(Particle)
+        particlesMemoryByteSize = particleCount * sizeof(Vector4)
         super.init(coder: coder)
         device = MTLCreateSystemDefaultDevice()!
         
         framebufferOnly = false
+        
+        colorPixelFormat = MTLPixelFormat.BGRA8Unorm
+        sampleCount = 1
+        preferredFramesPerSecond = 60
         
         drawableSize = CGSize(width: CGFloat(imageWidth), height: CGFloat(imageHeight));
         
@@ -114,7 +114,7 @@ class MetalView: MTKView {
         posix_memalign(&particlesMemory, alignment, particlesMemoryByteSize)
         
         particlesVoidPtr = COpaquePointer(particlesMemory)
-        particlesParticlePtr = UnsafeMutablePointer<Particle>(particlesVoidPtr)
+        particlesParticlePtr = UnsafeMutablePointer<Vector4>(particlesVoidPtr)
         particlesParticleBufferPtr = UnsafeMutableBufferPointer(start: particlesParticlePtr, count: particleCount)
         
         resetParticles()
@@ -128,26 +128,13 @@ class MetalView: MTKView {
         }
         
         let imageWidthDouble = Double(imageWidth)
-        let imageHeightDouble = Double(imageHeight)
         
         for index in particlesParticleBufferPtr.startIndex ..< particlesParticleBufferPtr.endIndex
         {
-            let positionAX = Float(drand48()*imageWidthDouble)
-            let positionAY = Float(imageHeightDouble)
-            
-            let positionBX = Float(drand48()*imageWidthDouble)
-            let positionBY = Float(imageHeightDouble)
-            
-            let positionCX = Float(drand48()*imageWidthDouble)
-            let positionCY = Float(imageHeightDouble)
-            
-            let positionDX = Float(drand48()*imageWidthDouble)
-            let positionDY = Float(imageHeightDouble)
-            
-            let particle = Particle(A: Vector4(x: positionAX, y: positionAY, z: rand(), w: rand()),
-                                    B: Vector4(x: positionBX, y: positionBY, z: rand(), w: rand()),
-                                    C: Vector4(x: positionCX, y: positionCY, z: rand(), w: rand()),
-                                    D: Vector4(x: positionDX, y: positionDY, z: rand(), w: rand()))
+            let positionX = Float(drand48()*imageWidthDouble)
+            let positionY = Float(arc4random() % UInt32(imageHeight))
+
+            let particle = Vector4(x:positionX, y:positionY, z:rand(), w:rand())
             
             particlesParticleBufferPtr[index] = particle
         }
@@ -168,9 +155,7 @@ class MetalView: MTKView {
         
         commandEncoder.setBuffer(imageWidthFloatBuffer, offset: 0, atIndex: 3)
         commandEncoder.setBuffer(imageHeightFloatBuffer, offset: 0, atIndex: 4)
-        
-        commandEncoder.setBytes(&dragFactor, length: sizeof(Float), atIndex: 5)
-        
+                
         guard let drawable = currentDrawable else
         {
             Swift.print("currentDrawable returned nil")
@@ -195,6 +180,8 @@ class MetalView: MTKView {
     
     enum ParticleCount: Int
     {
+        case EighthMillion = 32768
+        case QuarterMillion = 65536
         case HalfMillion = 131072
         case OneMillion =  262144
         case TwoMillion =  524288
@@ -209,14 +196,6 @@ class MetalView: MTKView {
         var G: Float32 = 0
         var B: Float32 = 0
         var A: Float32 = 1
-    }
-    
-    struct Particle
-    {
-        var A: Vector4 = Vector4(x: 0, y: 0, z: 0, w: 0)
-        var B: Vector4 = Vector4(x: 0, y: 0, z: 0, w: 0)
-        var C: Vector4 = Vector4(x: 0, y: 0, z: 0, w: 0)
-        var D: Vector4 = Vector4(x: 0, y: 0, z: 0, w: 0)
     }
     
     struct Vector4
